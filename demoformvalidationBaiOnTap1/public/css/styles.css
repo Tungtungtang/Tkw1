@@ -1,0 +1,14 @@
+body {
+	background: #2fc7af;
+}
+.navbar-default {
+	background: #fdd614;
+	border: none;
+	border-radius: 0;
+}
+
+footer {
+	text-align: center;
+	background: #fdd614;
+	padding: 15px 0;
+}

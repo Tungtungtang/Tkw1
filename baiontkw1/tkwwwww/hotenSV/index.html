@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<link rel="stylesheet" type="text/css" href="public/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="public/js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="public/js/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">FITbook</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">							
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Notification <i class="fa fa-bell-o" aria-hidden="true"></i></a></li>	
+					<li><a href="#">Account <i class="fa fa-bell-o" aria-hidden="true"></i></a></li>	
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form action="" method="POST" role="form" onsubmit="return validateForm();">
+						<legend>Login</legend>
+					
+						<div class="form-group">
+							<label for="" class="col-md-2">Fullname</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="fname" placeholder="Input field">
+							</div>						
+						</div>
+						<div class="form-group">
+							<label for="" class="col-md-2">Password</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="pass" placeholder="Input field">
+							</div>						
+						</div>
+						<div class="form-group">
+							<label for="" class="col-md-2">Security code</label>
+							<div class="col-md-10">
+								<div class="randomcode" id="randomcode">123</div>
+								<input type="text" class="form-control" id="code" placeholder="Input field">
+							</div>						
+						</div>
+					
+							
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<img src="public/images/1.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		hotenSV
+	</footer>
+</body>
+</html>

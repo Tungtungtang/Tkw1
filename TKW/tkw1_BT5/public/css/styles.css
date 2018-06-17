@@ -1,0 +1,26 @@
+.navbar-default {
+	border: none;
+	border-top: 10px  solid #f97f00;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.logo {
+	width: 150px;
+}
+.navbar-brand {
+	height: auto;
+}
+.navbar-default .navbar-nav>li>a {
+	padding: 45px 35px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
+	background: #f97f00;
+	color: #fff;
+}
+
+.banner {
+	background: #f97f00;
+}

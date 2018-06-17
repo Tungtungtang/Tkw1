@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/styles.css">
+	<script src="public/js/jquery-3.3.1.min.js"></script>
+	<script src="public/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="public/js/sitescripts.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">FIT-Book</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form action="#" method="POST" class="form-horizontal" role="form" onsubmit="return validateForm();">
+					<div class="form-group">
+						<legend>Login</legend>
+					</div>
+			
+					<div class="form-group">
+						<label for="fullname" class="col-sm-2 control-label">Fullname</label>
+						<div class="col-sm-10">
+							<input type="text" name="fullname" id="fullname" class="form-control" placeholder="Input fullname...">
+							<span class="help-block"></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" name="password" id="password" class="form-control" placeholder="Input password...">
+							<span class="help-block"></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="col-sm-2 control-label">Security Code</label>
+						<div class="col-sm-10">
+							<span class="help-block" id="code">123</span>
+							<input type="text" name="securitycode" id="securitycode" class="form-control" placeholder="Input code above...">
+							<span class="help-block"></span>
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</div>
+			</form>
+			</div>
+			<div class="col-md-6">
+				<img src="public/images/1.png" alt="" class="img-responsive">
+			</div>
+		</div>
+	
+	</div>
+	<footer>
+		&copy;2018
+	</footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+	<style>
+		#clock-face, #sec-hand, #min-hand, #hour-hand {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 500px;
+		}
+	</style>
+	<script src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		setInterval(setClock, 1000);
+		
+		function setClock() {
+			var curTime = new Date();
+
+			var s = curTime.getSeconds() * 6;
+			var m = curTime.getMinutes() * 6;
+			var h = curTime.getHours() * 30 + curTime.getMinutes() * 0.5; //1 phut = 30 do / 60 phut
+
+			$('#sec-hand').css('transform', 'rotate(' + s + 'deg)');
+			$('#min-hand').css('transform', 'rotate(' + m + 'deg)');
+			$('#hour-hand').css('transform', 'rotate(' + h + 'deg)');
+		}
+	</script>
+</head>
+<body>
+	<img src="public/images/clockface.gif" alt="" id="clock-face">
+	<img src="public/images/sechand.png" alt="" id="sec-hand">
+	<img src="public/images/minute_hand.png" alt="" id="min-hand">
+	<img src="public/images/hour_hand.png" alt="" id="hour-hand">
+
+</body>
+</html>

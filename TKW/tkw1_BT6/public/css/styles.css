@@ -1,0 +1,32 @@
+/*1 Item*/
+.item {
+	border: 1px solid grey;
+}
+.item-photo {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.item .item-name a {
+	color: #000;
+	margin: 15px;
+	display: block;
+	font-size: 0.8em;
+}
+.item-btn {
+	background: #b0b0b0;
+	border-left: 5px solid red;
+	text-align: center;
+	font-weight: bold;
+}
+.item-add {
+	padding: 5px 0;
+	display: block;
+	color: #000;
+	margin-left: 30px;
+}
+
+.item-price {
+	padding: 5px 0;
+	background: #e0e0e0;
+}

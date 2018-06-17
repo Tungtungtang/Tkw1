@@ -1,0 +1,33 @@
+/*Mobile: mac dinh*/
+.bgcolor {
+	background: green;
+}
+.ads {
+	background: orange;
+	padding: 15px;
+	display: none;
+	position: fixed;
+	padding: 200px 30px;
+	/*Dinh vi tri thong qua 4 CSS: top, bottom, left, right*/
+	left: 0;
+	top: 0;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+	.bgcolor {
+		background: red;
+	}
+	.ads {
+		display: block;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+	.bgcolor {
+		background: yellow;
+	}
+}
+
+/*Neu co thay doi, thi chi can viet css cho dieu kien nao bat dau thay doi*/

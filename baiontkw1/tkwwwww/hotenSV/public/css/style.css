@@ -1,0 +1,42 @@
+footer{
+	background: #ffd715;
+	line-height: 50px;
+	color:white;
+	text-align: center;
+}
+button, input, optgroup, select, textarea {
+    margin: 5px;
+    font: inherit;
+    color: inherit;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ffd715;
+    border-color: #ffd715;
+}
+.navbar-default {
+    background-color: #ffd715;
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-brand {
+    color: #fbfafa;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.content{
+	background: #03c6af;
+}

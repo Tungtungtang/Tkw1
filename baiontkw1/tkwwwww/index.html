@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 1 :))</title>
+	<meta name="viewport" content="width=device-width, 			initial-scale=1">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/css/styles.css">
+	<script src="public/js/jquery-2.2.4.min.js"></script>
+	<script src="public/js/bootstrap.min.js"></script>
+	<script src="public/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">FITbook</a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Notification <i class="fa fa-bell-o"></i></a></li>
+						<li><a href="#">Account <i class="fa fa-user-circle"></i></a></li>
+						
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="public/images/3.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<form action="" method="POST" role="form"onsubmit="return validateForm();">
+						<legend>Contact Us</legend>
+						<div class="form-group">
+							<label for="" class="col-md-2">Email</label>
+							<div class="col-md-10"><input type="text" class="form-control" id="" placeholder="Please input your Fullname">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-md-2">Message</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="" placeholder="Please type your message">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-md-2">Security Code</label>
+							<div class="col-md-10">
+								<div class="randomcode" id="randomcode">123</div>
+							<input type="text" class="form-control" id="" placeholder="Please input the code above...">
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		2018 @ FIT-TDC | Wade - 274
+	</footer>
+</body>
+</html>

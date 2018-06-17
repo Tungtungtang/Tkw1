@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chong chong</title>
+	<link rel="stylesheet" type="text/css" href="public/css/styles.css">
+	<script src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+	var p = setInterval(rotatePinwheel, 100);
+	
+	var a = 0;
+
+	function rotatePinwheel() {
+		$('.image').css('transform', 'rotate(' + a + 'deg)');
+		a += 1;
+	}
+
+	function stopPinwheel() {
+		$('#btnStart').css('display', 'inline');
+		$('#btnStop').css('display', 'none');
+		clearInterval(p);
+	}
+
+	function startPinwheel() {
+		$('#btnStart').css('display', 'none');
+		$('#btnStop').css('display', 'inline');
+		p = setInterval(rotatePinwheel, 100);
+	}
+
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="public/images/pinwheel.png">
+		</div>
+		<button onclick="startPinwheel();" id="btnStart">Start</button>
+		<button onclick="stopPinwheel();" id="btnStop">Stop</button>
+	</div>
+	<footer>
+		&copy; 2017 FIT - TDC
+	</footer>
+</body>
+</html>

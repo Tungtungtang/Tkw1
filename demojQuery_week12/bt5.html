@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Bai tap 5 - Lights</title>
+	<script src="public/js/jquery-3.3.1.min.js"></script>
+	<style>
+		.light {
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background: #000;
+			float: left;
+		}
+	</style>
+	<script type="text/javascript">
+		var colors = ['red', 'green', 'yellow', 'blue'];
+
+		setInterval(setLightColor, 500);
+
+		function setLightColor() {
+			for (var i = 0; i < $('.light').length; i++) {
+				$('.light').eq(i).css('background', colors[getRandomInt(0, colors.length)]);
+			}
+			
+		}
+
+		function getRandomInt(min, max) {
+		  min = Math.ceil(min);
+		  max = Math.floor(max);
+		  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+		}
+	</script>
+</head>
+<body>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+	<div class="light"></div>
+</body>
+</html>

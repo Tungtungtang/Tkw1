@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo JavaScript</title>
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="public/js/sitescripts.js"></script>
+</head>
+<body>
+	<p id="screen" style="border: 1px solid #000; padding: 15px;">0</p>
+	<button type="button" onclick="reset();">C</button>
+	<br>
+	<button type="button" onclick="input($(this).text());">0</button>
+	<button type="button" onclick="input($(this).text());">1</button>
+	<button type="button" onclick="input($(this).text());">2</button>
+	<button type="button" onclick="input(3);">3</button>
+	<button type="button" onclick="input(4);">4</button>
+	<button type="button" onclick="input(5);">5</button>
+	<button type="button" onclick="input(6);">6</button>
+	<button type="button" onclick="input(7);">7</button>
+	<button type="button" onclick="input(8);">8</button>
+	<button type="button" onclick="input(9);">9</button>
+	<br>
+	<button type="button" onclick="input('+')">+</button>
+	<button type="button" onclick="input('-')">-</button>
+	<button type="button" onclick="input('*')">*</button>
+	<button type="button" onclick="input('/')">/</button>
+	<br>
+	<button type="button" onclick="calculate()">=</button>
+
+
+</body>
+</html>
